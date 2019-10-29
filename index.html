@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Slow News</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <nav id="main-nav">
+            <ul>
+                <li>
+                    <a href="#" id="menu">
+                        Menu
+                        <span class="arrow">&#x25BC;</span>
+                    </a>
+                    <ul class="submenu">
+                        <li>
+                            <a href="#">Premium</a>
+                        </li>
+                        <li>
+                            <a href="#">Setting</a>
+                        </li>
+                        <li>
+                            <a href="#">Edition Times</a>
+                        </li>
+                        <li>
+                            <a href="#">Notifications</a>
+                        </li>
+                        <li>
+                            <a href="#">Blacklist</a>
+                        </li>
+                        <li>
+                            <a href="#">Help</a>
+                        </li>
+                        <li>
+                            <a href="#">Logout</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <script
+                src="https://code.jquery.com/jquery-3.4.1.js"
+                integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+                crossorigin="anonymous">
+        </script>
+        <script type="text/javascript">
+            var p = document.getElementById("menu");
+            p.onclick = showAlert;
+        </script>
+    </body>
+</html>
