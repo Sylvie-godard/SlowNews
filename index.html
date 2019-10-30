@@ -9,45 +9,31 @@
         <nav id="main-nav">
             <ul>
                 <li>
-                    <a href="#" id="menu">
+                    <a onclick="myFunction()" id="menu">
                         Menu
                         <span class="arrow">&#x25BC;</span>
                     </a>
                     <ul class="submenu">
-                        <li>
-                            <a href="#">Premium</a>
-                        </li>
-                        <li>
-                            <a href="#">Setting</a>
-                        </li>
-                        <li>
-                            <a href="#">Edition Times</a>
-                        </li>
-                        <li>
-                            <a href="#">Notifications</a>
-                        </li>
-                        <li>
-                            <a href="#">Blacklist</a>
-                        </li>
-                        <li>
-                            <a href="#">Help</a>
-                        </li>
-                        <li>
-                            <a href="#">Logout</a>
-                        </li>
+                        <div id="submenu" class="close">
+                            <li><a href="#">Premium</a></li>
+                            <li><a href="#">Setting</a></li>
+                            <li><a href="#">Edition Times</a></li>
+                            <li><a href="#">Notifications</a></li>
+                            <li><a href="#">Blacklist</a></li>
+                            <li><a href="#">Help</a></li>
+                            <li><a href="#">Logout</a></li>
+                        </div>
                     </ul>
                 </li>
             </ul>
         </nav>
-
-        <script
-                src="https://code.jquery.com/jquery-3.4.1.js"
-                integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-                crossorigin="anonymous">
-        </script>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
         <script type="text/javascript">
-            var p = document.getElementById("menu");
-            p.onclick = showAlert;
+            function myFunction() {
+                let element = document.getElementById("submenu");
+                element.classList.toggle("open");
+            }
         </script>
+
     </body>
 </html>

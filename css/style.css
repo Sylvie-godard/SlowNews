@@ -7,7 +7,6 @@
 #main-nav a {
     color: white;
     background-color: darkcyan;
-    display: block;
     height: 4rem;
     font-family: Verdana, sans-serif;
     display: flex;
@@ -31,17 +30,18 @@
 
 #main-nav li {
     width: 100%;
-    text-align: center;
     position: relative;
 }
 
-#main-nav li:hover .submenu > li {
+.close{
+    display: none;
+}
+
+.open {
     display: block;
-    top: 0;
 }
 
 .submenu li {
-    display: none;
     position: absolute;
     top: 0;
 }
@@ -57,4 +57,8 @@
     margin-left: 0.5rem;
     color: white;
     font-size: 0.75rem;
+}
+
+.show {
+    display: block;
 }
