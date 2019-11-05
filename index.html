@@ -4,9 +4,16 @@
         <meta charset='utf-8'/>
         <title>Slow News</title>
         <link rel='stylesheet' href='css/style.css'>
+        <script src='https://code.jquery.com/jquery-3.4.1.js'></script>
+        <script type='text/javascript'>
+            function myFunction() {
+                let element = document.getElementById('sidebar');
+                element.classList.toggle('open');
+            }
+        </script>
     </head>
     <body>
-        <div class="container">
+        <div class="top-bar">
             <div id='main-nav'>
                 <a onclick='myFunction()'>
                     Menu
@@ -26,19 +33,9 @@
                     <li><a href='#'>Logout</a></li>
                 </ul>
             </div>
-            <script src='https://code.jquery.com/jquery-3.4.1.js'></script>
-            <script type='text/javascript'>
-                function myFunction() {
-                    let element = document.getElementById('sidebar');
-                    element.classList.toggle('open');
-                }
-            </script>
         </div>
-        <section class="content">
-
-        </section>
         <footer>
-            <div class="main">
+            <div class="footer-img">
                 <img src="public/img/listen.png" alt="">
                 <img src="public/img/stars.png" alt="">
                 <img src="public/img/reunion.png" alt="">

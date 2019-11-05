@@ -74,7 +74,7 @@ a {
 }
 
 .open {
-    width: 80%;
+    width: 60%;
     display: block;
 }
 
@@ -93,9 +93,11 @@ a {
     font-size: 0.75rem;
 }
 
-.container {
+.top-bar {
     height: auto;
 }
+
+/*FOOTER*/
 footer {
     position: fixed;
     bottom: 0;
@@ -103,23 +105,20 @@ footer {
     right: 0;
 }
 
-.main {
+.footer-img {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
 }
 
-.main img {
+.footer-img img {
     height: 3.5rem;
 }
+
 body>footer {
     background-color: #8fc2f4;
     color: white;
     padding: 1rem 0;
     margin-top: 0;
-}
-
-.content {
-    flex:1 0 auto;
 }
 
