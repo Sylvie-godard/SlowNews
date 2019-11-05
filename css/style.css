@@ -52,7 +52,7 @@ a {
     top: 4rem;
     position: fixed;
     height: 100%;
-    background-color: antiquewhite;
+    background-color: white;
 }
 
 #sidebar li{
@@ -62,7 +62,9 @@ a {
     padding: 1rem;
     border-bottom: 1px solid gray
 }
-
+#main-nav a {
+    margin-left: 1rem;
+}
 #main-nav li {
     width: 100%;
     text-align: center;
